@@ -1,0 +1,85 @@
+$primary:#101823;
+$secondary:#FF4657;
+
+#fascia2{
+    
+    object-fit: contain;
+    width: 45vw
+}
+
+#fascia1{
+    width: 45vw;
+    object-fit: contain;
+}
+
+span{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 1000;
+  color: #101823;
+}
+.centeredLeft > span{
+  font-size: 2.8vw;
+}
+
+#logo{
+  width: 2.6vw;
+  object-fit: contain;
+
+}
+.containerLeft {
+  float:left;
+  position: relative;
+  text-align: center;
+}
+.containerRight{
+  float: right;
+  position: relative;
+  text-align: center;
+}
+.centeredLeft {
+  position: absolute;
+  top: 40px;
+  left: 37%;
+  transform: translate(-50%, -50%);
+}
+.centeredRight {
+
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.lista{
+  float: right;
+}
+
+.centeredRight > a > span{
+  font-size: 1.7vw;
+  
+}
+a:link {
+  text-decoration: none;
+}
+
+
+@media screen and (max-width: 1800px) {
+
+
+  }
+
+@media screen and (max-width: 1300px) {
+
+  }
+
+  @media screen and (max-width: 800px) {
+    #fascia1{
+        width: 0;
+      }
+    #fascia2{
+        width: 0;
+    }
+
+  }
+
+

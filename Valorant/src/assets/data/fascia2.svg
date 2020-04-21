@@ -1,0 +1,11 @@
+<svg id="fascia2" width="880" height="331" fill="none">
+  <path d="M1 330L833 -710L897 47L650.212 330H1Z" fill="#FF4657" />
+  <path d="M878.5 68L176.5 111L0 330.5L655.145 330L786.176 179.231L878.5 68Z" fill="url(#paint0_linear)" />
+  <defs>
+    <linearGradient id="paint0_linear" x1="395.843" y1="114.261" x2="395.843" y2="329.504"
+      gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF4657" />
+      <stop offset="1" stop-color="#101823" />
+    </linearGradient>
+  </defs>
+</svg>

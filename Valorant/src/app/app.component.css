@@ -1,0 +1,39 @@
+#fascia2 {
+  float: right;
+  object-fit: contain;
+  width: 800px;
+}
+#fascia1 {
+  float: left;
+  width: 800px;
+  object-fit: contain;
+}
+@media screen and (max-width: 1800px) {
+  #fascia1 {
+    width: 650px;
+  }
+  #fascia2 {
+    width: 650px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  #fascia1 {
+    width: 400px;
+  }
+  #fascia2 {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 800px) {
+  #fascia1 {
+    width: 0;
+  }
+  #fascia2 {
+    width: 0;
+  }
+}
+.logo {
+  width: 800px;
+  height: 300px;
+  background: url("../assets/data/fascia2.svg");
+}
