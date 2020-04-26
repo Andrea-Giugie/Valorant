@@ -7,6 +7,7 @@ import { TopMenuComponent } from './top-menu/top-menu.component';
 import { RicercaComponent } from './ricerca/ricerca.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { PlayerStatsComponent } from './player-stats/player-stats.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { PlayerStatsComponent } from './player-stats/player-stats.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

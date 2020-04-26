@@ -1,21 +1,20 @@
-<div class="container">
-    <div class="barra">
-        <form>
-            <input name="Player" type="text" placeholder="Andreawu98">
-        </form>
-    </div>
-    <div class="lente">
-        <img onclick="" src="./assets/data/lente.svg " />
-
-    </div>
-    <div></div>
-    <div class="containerRiga">
-        <div class="spazio"></div>
-        <div class="logo spazio containerRiga">
+<form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+    <div class="container">
+        <div class="barra">
+            <input name="Player" ngModel type="text" placeholder="Andreawu98">
+        </div>
+        <div class="lente">
+            <img (click)="f.ngSubmit.emit()" src="./assets/data/lente.svg " />
+        </div>
+        <div></div>
+        <div class="containerRiga">
             <div class="spazio"></div>
-            <img class="immagineLogo" src="./assets/data/LogoColorato.png" />
+            <div class="logo spazio containerRiga">
+                <div class="spazio"></div>
+                <img class="immagineLogo" src="./assets/data/LogoColorato.png" />
+                <div class="spazio"></div>
+            </div>
             <div class="spazio"></div>
         </div>
-        <div class="spazio"></div>
     </div>
-</div>
+</form>
