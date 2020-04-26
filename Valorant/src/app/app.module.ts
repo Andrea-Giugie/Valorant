@@ -5,12 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TopMenuComponent } from './top-menu/top-menu.component';
 import { RicercaComponent } from './ricerca/ricerca.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
+import { PlayerStatsComponent } from './player-stats/player-stats.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopMenuComponent,
-    RicercaComponent
+    RicercaComponent,
+    LandingPageComponent,
+    PlayerStatsComponent
   ],
   imports: [
     BrowserModule,

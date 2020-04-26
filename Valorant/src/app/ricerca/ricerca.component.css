@@ -6,7 +6,7 @@
   position: relative;
   flex: 1;
   width: 50vw;
-  padding: 3vw;
+  padding: 2.5vw;
   background: #ff4657;
   mix-blend-mode: normal;
   border-radius: 80px;
@@ -14,10 +14,11 @@
 .lente {
   position: absolute;
   background: #fff;
-  padding: 3vw;
+  padding: 2.5vw;
   border-top-right-radius: 80px;
   border-bottom-right-radius: 80px;
   margin-left: 50vw;
+  margin-top: 0;
 }
 input {
   width: 80%;
@@ -41,8 +42,8 @@ input::placeholder {
 .lente img {
   position: absolute;
   height: 2vw;
-  right: 2vw;
-  bottom: 2vw;
+  right: 1.7vw;
+  bottom: 1.7vw;
 }
 .lente:hover {
   cursor: pointer;
