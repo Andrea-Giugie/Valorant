@@ -8,6 +8,7 @@ import { RicercaComponent } from './ricerca/ricerca.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { PlayerStatsComponent } from './player-stats/player-stats.component';
 import { FormsModule } from '@angular/forms';
+import { TopMenuSimpleComponent } from './top-menu-simple/top-menu-simple.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { FormsModule } from '@angular/forms';
     TopMenuComponent,
     RicercaComponent,
     LandingPageComponent,
-    PlayerStatsComponent
+    PlayerStatsComponent,
+    TopMenuSimpleComponent
   ],
   imports: [
     BrowserModule,

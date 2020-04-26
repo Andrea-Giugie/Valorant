@@ -8,12 +8,16 @@
   font-weight: 100;
   color: #101823;
 }
-#logo {
+.Barra {
+  background-color: #ff4657;
   height: 3vw;
+}
+#logo {
+  margin-top: 0.3vw;
+  height: 2vw;
   object-fit: contain;
 }
 .Nome {
-  margin: 0;
   margin-top: 0.5vw;
   position: relative;
   align-self: flex-start;
@@ -21,49 +25,26 @@
   font-style: normal;
   font-weight: 100;
   color: #101823;
-  font-size: 3vw;
-}
-.FasciaSinistra {
-  background: linear-gradient(180deg, #ff4657 0%, #101823 100%);
-  height: 20vw;
-  flex: 2;
-  clip-path: polygon(0 0, 70% 0%, 100% 100%, 30% 100%);
-  transform: translateX(-40px);
-  justify-content: center;
+  font-size: 2vw;
 }
 .Titolo {
   height: 3vw;
   flex: 2;
   order: 1;
+  margin-left: 1vw;
 }
-#SpazioSx {
-  flex: 1;
-  order: 1;
-}
-#SpazioDx {
-  flex: 2;
-  order: 3;
-}
-.FasciaDestra {
-  background: linear-gradient(180deg, #ff4657 0%, #101823 100%);
-  flex: 2;
-  height: 10px;
-  clip-path: polygon(30% 0, 100% 0, 74% 100%, 0 100%);
-  height: 15vw;
-}
-.SpazioSxFasciaDx {
+.Spazio {
   flex: 5;
-}
-.SpazioDxFasciaDx {
-  flex: 1;
+  order: 2;
 }
 .menu {
-  align-self: flex-start;
-  flex: 4;
+  align-self: flex-end;
+  flex: 1;
   text-decoration: none;
   text-align: center;
   position: relative;
-  font-size: 1.8vw;
+  font-size: 1.3vw;
+  order: 3;
 }
 .Indice {
   background-color: white;
@@ -81,30 +62,26 @@
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 25px;
 }
-.FasciaDestra > * {
-  margin-top: 0.5em;
-}
-.Spaziatore {
-  background-color: #101823;
-  height: 1px;
-  flex: 1;
-}
 .container {
   display: flex;
   flex-direction: row;
 }
 @media screen and (max-width: 1800px) {
-  .FasciaSinistra {
-    height: 30vw;
-  }
-  .FasciaDestra {
-    height: 20vw;
-  }
-  .menu {
-    font-size: 2vw;
+  .Barra {
+    height: 5vw;
   }
   .Nome {
-    font-size: 2.5vw;
+    font-size: 3vw;
+  }
+  #logo {
+    margin-top: 0;
+    height: 3vw;
+  }
+  .Titolo {
     margin-top: 1vw;
+  }
+  .menu {
+    font-size: 2.5vw;
+    margin-top: 2vw;
   }
 }

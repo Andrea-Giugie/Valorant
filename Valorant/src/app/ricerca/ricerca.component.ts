@@ -11,10 +11,9 @@ export class RicercaComponent implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit(): void {
-    console.log("ciao")
   }
   onSubmit(f: NgForm) {
-    console.log(f.value.Player)
-    this.router.navigate([`/Player/${f.value.Player}`]);
+    var player: string = f.value.Player.trim();
+    this.router.navigate([`/Player/${player}`]);
   }
 }

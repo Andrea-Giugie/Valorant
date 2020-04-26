@@ -1,0 +1,114 @@
+$primary:#101823;
+$secondary:#FF4657;
+
+/*GENERALE*/
+
+@font-face {
+  font-family: Digital;
+  src: url("/assets/data/Fonts/digitalt-24384/Digitalt-04no.ttf");
+}
+
+.testo{
+  font-family: Digital;
+  font-style: normal;
+  font-weight: 100;
+  color: $primary;
+}
+
+.Barra{
+  background-color: $secondary;
+  height: 3vw;
+}
+
+
+  /*Logo Sinistro*/
+#logo{
+  margin-top:0.3vw;
+  height: 2vw;
+  object-fit: contain;
+}
+
+.Nome{
+  margin-top:0.5vw;
+  position: relative;
+  align-self: flex-start;
+  font-family: Digital;
+  font-style: normal;
+  font-weight: 100;
+  color: $primary;
+  font-size:2vw;
+}
+
+
+.Titolo{
+  height: 3vw;
+  flex:2;
+  order:1;
+  margin-left:1vw;
+}
+.Spazio{
+  flex:5;
+  order:2;
+}
+
+
+/* Menu Destro */
+
+
+.menu{
+ 
+  align-self: flex-end;
+  flex:1;
+  text-decoration: none;
+  text-align: center;
+  position: relative;
+  font-size:1.3vw;
+  order:3;
+
+}
+.Indice{
+  background-color: white;
+  border-radius: 25px;
+  width:75%;
+  position: absolute;
+  height: 5px;
+  margin-left:10%;
+}
+
+.selected{
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 25px;
+}
+
+
+.menu:hover{
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 25px;
+}
+
+
+/* CONTAINER */
+.container{
+  display:flex;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 1800px) {
+  .Barra{
+    height:5vw;
+  }
+  .Nome{
+    font-size:3vw;
+  }
+  #logo{
+    margin-top:0;
+    height: 3vw;
+  }
+  .Titolo{
+    margin-top: 1vw;
+  }
+  .menu{
+    font-size:2.5vw;
+    margin-top:2vw;
+  }
+}
