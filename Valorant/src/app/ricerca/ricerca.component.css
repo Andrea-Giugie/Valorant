@@ -1,0 +1,69 @@
+@font-face {
+  font-family: Digital;
+  src: url("../../assets/data/Fonts/digitalt-24384/Digitalt-04no.ttf");
+}
+.barra {
+  position: relative;
+  flex: 1;
+  width: 50vw;
+  padding: 3vw;
+  background: #ff4657;
+  mix-blend-mode: normal;
+  border-radius: 80px;
+}
+.lente {
+  position: absolute;
+  background: #fff;
+  padding: 3vw;
+  border-top-right-radius: 80px;
+  border-bottom-right-radius: 80px;
+  margin-left: 50vw;
+}
+input {
+  width: 80%;
+  position: absolute;
+  background: none;
+  border: none;
+  color: #fff;
+  outline: none;
+  font-family: Digital;
+  font-style: normal;
+  font-weight: 100;
+  color: #fff;
+  font-size: 2vw;
+  top: 0;
+  bottom: 0;
+}
+input::placeholder {
+  color: #fff;
+  opacity: 0.4;
+}
+.lente img {
+  position: absolute;
+  height: 2vw;
+  right: 2vw;
+  bottom: 2vw;
+}
+.lente:hover {
+  cursor: pointer;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 8vw;
+}
+.spazio {
+  flex: 1;
+}
+.containerRiga {
+  display: flex;
+  flex-direction: row;
+}
+.logo {
+  flex: 1;
+  margin-top: 2vh;
+  display: flex;
+}
+.immagineLogo {
+  height: 10vw;
+}

@@ -1,0 +1,35 @@
+
+
+.ScrittaInMezzo{
+    position: absolute;
+    margin:0;
+    user-select: none;
+    right: 1vw;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28vw;
+    line-height: 19vw;
+    text-align: center;
+    
+    color: #FF4657;
+    
+    opacity: 0.014;
+}
+.MainContainer{
+    position: relative;
+}
+@media screen and (max-width: 1800px) {
+    .ScrittaInMezzo{
+        line-height: 35vw;
+    }
+
+}
+
+.container{
+    display: flex;
+    
+}
+.spazio{
+    flex:1;
+}

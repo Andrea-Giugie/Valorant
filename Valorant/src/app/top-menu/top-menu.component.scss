@@ -1,108 +1,55 @@
 $primary:#101823;
 $secondary:#FF4657;
-$grandezzaFasce:25vw;
 
-#fascia2{
-    
-    object-fit: contain;
-    width: 45vw
+
+
+
+/*GENERALE*/
+
+@font-face {
+  font-family: Digital;
+  src: url("/assets/data/Fonts/digitalt-24384/Digitalt-04no.ttf");
 }
 
-#fascia1{
-    width: 45vw;
-    object-fit: contain;
+.testo{
+  font-family: Digital;
+  font-style: normal;
+  font-weight: 100;
+  color: #101823;
 }
-
-.centeredLeft > span{
-  font-size: 2.8vw;
-}
-
-
-.containerLeft {
-  float:left;
-  position: relative;
-  text-align: center;
-}
-.containerRight{
-  float: right;
-  position: relative;
-  text-align: center;
-}
-.centeredLeft {
-  position: absolute;
-  top: 40px;
-  left: 37%;
-  transform: translate(-50%, -50%);
-}
-.centeredRight {
-
-  position: absolute;
-  top: 40px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.lista{
-  float: right;
-}
-
-.centeredRight > a > span{
-  font-size: 1.7vw;
-  
-}
-a:link {
-  text-decoration: none;
-}
-
-
-@media screen and (max-width: 1800px) {
-
-
-  }
-
-@media screen and (max-width: 1300px) {
-
-  }
-
-  @media screen and (max-width: 800px) {
-    #fascia1{
-        width: 0;
-      }
-    #fascia2{
-        width: 0;
-    }
-
-
-
-  }
 
 
   /*FASCIA SINISTRA*/
 #logo{
-  padding-top: 1vh;
-  height: 3vh;
-  object-fit: contain;
+  
 
+  height: 3vw;
+  object-fit: contain;
 }
 
 .Nome{
+  margin: 0;
+  margin-top:0.5vw;
+  position: relative;
   align-self: flex-start;
-  font-family: Montserrat;
+  font-family: Digital;
   font-style: normal;
-  font-weight: 1000;
+  font-weight: 100;
   color: #101823;
-  font-size:2vh;
-  margin-bottom: 20px;
+  font-size:3vw;
 }
 
 .FasciaSinistra{
   background: linear-gradient(180deg, #FF4657 0%, #101823 100%);
-  height: 30vh;
+  height: 20vw;
   flex:2;
   clip-path: polygon(0 0, 70% 0%, 100% 100%, 30% 100%);
   transform: translateX(-40px);
   justify-content: center;
 }
 .Titolo{
+  
+  height: 3vw;
   flex:2;
   order:1;
 }
@@ -111,7 +58,7 @@ a:link {
   order:1;
 }
 #SpazioDx{
-  flex:1;
+  flex:2;
   order:3;
 }
 
@@ -123,7 +70,45 @@ a:link {
   flex:2;
   height: 10px;
   clip-path: polygon(30% 0, 100% 0, 74% 100%, 0 100%);
-  height: 20vh;
+  height: 15vw;
+}
+.SpazioSxFasciaDx{
+  flex:5;
+}
+.SpazioDxFasciaDx{
+flex:1;
+}
+
+.menu{
+  align-self: flex-start;
+  flex:4;
+  text-decoration: none;
+  text-align: center;
+  position: relative;
+  font-size:1.8vw;
+
+}
+.Indice{
+  background-color: white;
+  border-radius: 25px;
+  width:75%;
+  position: absolute;
+  height: 5px;
+  margin-left:10%;
+}
+
+.selected{
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 25px;
+}
+
+
+.menu:hover{
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 25px;
+}
+.FasciaDestra >*{
+  margin-top:0.5em;
 }
 
 /* CONTAINER */
@@ -139,6 +124,41 @@ a:link {
 .container{
   display:flex;
   flex-direction: row;
-  align-items: flex-start;
- 
+}
+
+/*<1800*/
+
+@media screen and (max-width: 1800px) {
+  .FasciaSinistra{
+    height: 30vw;
+  }
+  .FasciaDestra{
+    height:20vw;
+  }
+  .menu{
+    font-size:2vw;
+
+  }
+  .Nome{
+    font-size: 2.5vw;
+    margin-top:1vw;
+  }
+  
+
+
+}
+
+
+
+/*<1200*/
+
+
+/*<768*/
+@media screen and (max-width: 768px) {
+  .FasciaSinistra{
+   display: none;
+  }
+  .FasciaDestra{
+    display: none;
+  }
 }
