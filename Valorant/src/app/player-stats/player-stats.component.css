@@ -1,0 +1,57 @@
+.Statistiche span {
+  color: #fff;
+}
+.Player {
+  position: relative;
+  width: 10vw;
+  flex-direction: column;
+  align-items: center;
+}
+.Player img {
+  flex: 1;
+  order: 1;
+  object-fit: contain;
+  margin: 0;
+  width: 100%;
+}
+.nomePlayer {
+  background: #102645;
+  flex: 1;
+  order: 2;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: inline-block;
+  text-align: center;
+}
+.tag {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(0.8);
+  flex: 1;
+  order: 3;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+.tagTesto {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  text-align: center;
+  z-index: 0;
+}
+.container {
+  display: flex;
+}
+.spazioAds {
+  flex: 1;
+}
+.pagina {
+  height: 90vh;
+}
+.Statistiche {
+  position: relative;
+  margin-top: 2vw;
+  flex: 8;
+  justify-content: baseline;
+}
