@@ -4,7 +4,10 @@ import { LandingPageComponent } from './landing-page/landing-page.component'
 import { PlayerStatsComponent } from './player-stats/player-stats.component'
 
 
-const routes: Routes = [{ path: '', component: LandingPageComponent }, { path: 'Player/:Nome', component: PlayerStatsComponent }];
+const routes: Routes = [
+  { path: '', component: LandingPageComponent },
+  { path: 'Player/:Nome', component: PlayerStatsComponent },
+  { path: '**', component: LandingPageComponent }];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
