@@ -8,7 +8,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "salva": "ng build --prod --base-href ./ --deployUrl ./"
+    "salva": "ng build --prod --base-href ./ --deployUrl ./",
+    "provissima": "ng build --prod --base-href /Valorant/ --deployUrl /Valorant/"
   },
   "private": true,
   "dependencies": {
