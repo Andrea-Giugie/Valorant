@@ -9,6 +9,7 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { PlayerStatsComponent } from './player-stats/player-stats.component';
 import { FormsModule } from '@angular/forms';
 import { TopMenuSimpleComponent } from './top-menu-simple/top-menu-simple.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { TopMenuSimpleComponent } from './top-menu-simple/top-menu-simple.compon
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
