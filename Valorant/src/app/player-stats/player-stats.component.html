@@ -1,15 +1,24 @@
 <Top-Menu-Simple></Top-Menu-Simple>
+<style>
+
+</style>
 <div class="container pagina">
     <div class="spazioAds"></div>
     <div class="Statistiche">
-        <div class="Player container">
-            <img src="./assets/data/StandardIcon.png" alt="icona">
-            <span class="nomePlayer">{{player.Nome}}</span>
+        <div class="container">
+            <div class="Player container">
+                <img src="./assets/data/StandardIcon.png" alt="icona">
+                <span class="nomePlayer">{{player.Nome}}</span>
 
-            <div class="tag">
-                <span class="tagTesto">Velenoso</span>
             </div>
-
+            <div style="flex:1">
+                <app-grafico></app-grafico>
+            </div>
+            <div style=" flex:1">
+                <img src={{this.player.rankimg}}>
+            </div>
+            <div style="flex:1">refresh</div>
+            <div style="flex:1">skill rating</div>
         </div>
     </div>
     <div class="spazioAds"></div>

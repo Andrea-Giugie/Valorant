@@ -10,6 +10,9 @@ import { PlayerStatsComponent } from './player-stats/player-stats.component';
 import { FormsModule } from '@angular/forms';
 import { TopMenuSimpleComponent } from './top-menu-simple/top-menu-simple.component';
 import { HttpClientModule } from '@angular/common/http';
+import { GraficoComponent } from './grafico/grafico.component';
+import { MessageService } from './MessageService'
+import { ChartsModule } from 'ng2-charts'
 
 @NgModule({
   declarations: [
@@ -18,15 +21,17 @@ import { HttpClientModule } from '@angular/common/http';
     RicercaComponent,
     LandingPageComponent,
     PlayerStatsComponent,
-    TopMenuSimpleComponent
+    TopMenuSimpleComponent,
+    GraficoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ChartsModule
   ],
-  providers: [],
+  providers: [MessageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
