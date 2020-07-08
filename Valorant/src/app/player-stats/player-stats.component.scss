@@ -3,7 +3,7 @@
     src: url("../Montserrat-Black.ttf");
   }
 
-.Player span{
+span{
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
@@ -66,5 +66,20 @@ span{
     flex:8;
     justify-content: baseline;
 }
-
+.bottoneRefresh{
+    background-color: #FF4657;
+    border: none;
+    color: white;
+    padding: 0.5vw 0.6vw;
+    text-align: center;
+    display: inline-block;
+    border-radius: 2vw;
+    cursor: pointer;
+}
+.child1{
+    flex:1;
+}
+.containerRefresh{
+    text-align:center;
+}
 

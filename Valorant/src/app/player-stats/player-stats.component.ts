@@ -26,11 +26,7 @@ export class PlayerStatsComponent implements OnInit {
     this.NomePlayer = this.activatedRoute.snapshot.paramMap.get("Nome");
     this.sendGetRequest(this.BackEnd + `?player=${this.NomePlayer}`).then((player: Player) => {
       this.player = player;
-      this.player.giocate = 13;
-      this.player.vinte = 10;
-      this.player.perse = 3;
-      this.player.percWinrate = Math.round(player.vinte * 100 / player.giocate)
-      this.player.rankimg = "https://vignette.wikia.nocookie.net/valorant/images/c/c0/TX_CompetitiveTier_Large_14.png/revision/latest?cb=20200623203417"
+
 
       this.messageService.updateMessage(this.player.percWinrate);
 
@@ -43,6 +39,11 @@ export class PlayerStatsComponent implements OnInit {
 
     /*http request al mio server col nome del player*/
     this.metaTagService.updateTag({ name: 'Player', content: `${this.NomePlayer}'s Valorant statistics` });
+  }
+  RefreshPlayer() {
+    this.sendGetRequest(this.BackEnd + `/UpdatePlayer?player=${this.NomePlayer}`).then(() => {
+      window.location.reload()
+    });
   }
 
   sendGetRequest(url: string): Promise<Object> {

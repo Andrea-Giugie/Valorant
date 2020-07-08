@@ -11,14 +11,20 @@
                 <span class="nomePlayer">{{player.Nome}}</span>
 
             </div>
-            <div style="flex:1">
+            <div class="child1">
                 <app-grafico></app-grafico>
             </div>
-            <div style=" flex:1">
+            <div class="child1">
                 <img src={{this.player.rankimg}}>
             </div>
-            <div style="flex:1">refresh</div>
-            <div style="flex:1">skill rating</div>
+            <div class="child1 containerRefresh">
+                <div class="bottoneRefresh " (click)="RefreshPlayer()">
+                    <span>Refresh</span>
+                </div><br>
+                <span>Refreshed 10h ago</span>
+
+            </div>
+            <div class="child1">skill rating</div>
         </div>
     </div>
     <div class="spazioAds"></div>
