@@ -13,7 +13,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { GraficoComponent } from './grafico/grafico.component';
 import { MessageService } from './MessageService'
 import { ChartsModule } from 'ng2-charts';
-import { CartaComponent } from './carta/carta.component'
+import { CartaComponent } from './carta/carta.component';
+import { HistoryComponent } from './history/history.component'
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { CartaComponent } from './carta/carta.component'
     PlayerStatsComponent,
     TopMenuSimpleComponent,
     GraficoComponent,
-    CartaComponent
+    CartaComponent,
+    HistoryComponent
   ],
   imports: [
     BrowserModule,
