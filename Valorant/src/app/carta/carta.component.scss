@@ -1,0 +1,78 @@
+
+@font-face {
+    font-family: Digital;
+    src: url("../Montserrat-Black.ttf");
+  }
+
+span{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    color:white;
+    line-height: 15px;
+    width: 100%;
+}
+.head>span{//titolo
+    font-size: 1.3em;
+    margin: 0;
+    margin-top: 7px;
+    display: inline-block;
+    text-align: center;
+}
+
+.body{
+    width: 10vw;
+    position: relative;
+
+    height: 367px;
+    background: rgba(255, 255, 255, 0.05); 
+    border-radius: 14px;
+    margin:0;
+}
+
+.carta{
+    position: relative;
+   
+}
+.head{
+    width: 10vw;
+    position: absolute;
+
+    height: 38.57px;
+    border-bottom-color:rgba(255, 255, 255, 1);  ;
+    border-bottom-style:solid;
+    margin:0;
+    background: rgba(255, 255, 255, 0.08); 
+    align-items: center;
+    justify-content: center;
+}
+
+.rombo{
+    position: relative;
+    width: 3px;
+    height: 3px;
+    border: 3px solid #fff;
+    background-color: white;
+    left:48%;
+    right:52%;
+    top:3px;
+
+
+    transform: scaleX(.5) rotate(45deg);
+      
+}
+.titolo{
+    font-size: 1em;
+
+
+}
+.testo{
+    font-size: 1em;
+    color:#FF4657
+
+}
+.lineaDiTesto{
+    margin-top: 20px;;
+    margin-left:0.3vw;
+}

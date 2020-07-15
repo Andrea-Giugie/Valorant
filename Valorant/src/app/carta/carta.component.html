@@ -1,0 +1,19 @@
+<div class="carta">
+    <div class="head">
+        <span>Skill rating</span>
+        <div class="rombo"></div>
+    </div>
+    <div class="body">
+        <br>
+        <br>
+        <br>
+
+        <div *ngFor="let dati of body" class="lineaDiTesto">
+            <span class="titolo">{{dati.titolo}}: </span>
+            <span class="testo">{{dati.testo}}</span>
+
+
+        </div>
+
+    </div>
+</div>

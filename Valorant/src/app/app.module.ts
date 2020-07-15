@@ -12,7 +12,8 @@ import { TopMenuSimpleComponent } from './top-menu-simple/top-menu-simple.compon
 import { HttpClientModule } from '@angular/common/http';
 import { GraficoComponent } from './grafico/grafico.component';
 import { MessageService } from './MessageService'
-import { ChartsModule } from 'ng2-charts'
+import { ChartsModule } from 'ng2-charts';
+import { CartaComponent } from './carta/carta.component'
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ChartsModule } from 'ng2-charts'
     LandingPageComponent,
     PlayerStatsComponent,
     TopMenuSimpleComponent,
-    GraficoComponent
+    GraficoComponent,
+    CartaComponent
   ],
   imports: [
     BrowserModule,
